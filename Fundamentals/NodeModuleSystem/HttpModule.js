@@ -19,10 +19,10 @@ const server = http.createServer((req, res) => {
     }
 
     if (req.url === '/api/courses') {
-        res.write(JSON.stringify([1, 2, 3]));   //write an aarray, json.stringify will convert this array into a string using json syntax 
+        res.write(JSON.stringify([1, 2, 3]))   //write an aarray, json.stringify will convert this array into a string using json syntax 
                                                //and then  we'll write it to tha response 
-        res.end();
-    }
+    
+                                            }
 });
 
 //Before listening we should register a listener
